@@ -48,7 +48,7 @@ def minimize_ell_sorted(data, colors):
     blue_gt_theta = total_blue
 
     best_theta = data[0]
-    best_loss = red_leq_theta + blue_gt_theta
+    best_loss = float('inf')
 
     for alpha in range(1, n + 1):
         idx = alpha - 1
